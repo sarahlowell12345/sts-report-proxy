@@ -1,3 +1,3 @@
 name = "sts-report-proxy"
-main = "sts-report-worker-v5.js"
+main = "sts-report-worker-v6.js"
 compatibility_date = "2026-05-23"
