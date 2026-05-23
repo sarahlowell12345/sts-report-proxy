@@ -64,7 +64,7 @@ function getHTML() {
   parts.push('.print-btn:hover{background:#d6e4ed}');
   parts.push('.back-btn{font-size:13px;color:#457b9d;background:none;border:none;cursor:pointer;margin-bottom:1.25rem;display:flex;align-items:center;gap:6px;padding:0}');
   parts.push('.back-btn:hover{color:#1d3557}');
-  parts.push('@media print{body{background:white;padding:0}.input-card,.back-btn,.print-btn{display:none !important}.report-card{display:block !important;border:none}}');
+  parts.push('@media print{@page{margin:0.5in}body{background:white;padding:0}.input-card,.back-btn,.print-btn,.tool-header{display:none !important}.report-card{display:block !important;border:none;border-radius:0}}');
   parts.push('</style></head><body><div class="container">');
   parts.push('<div class="tool-header"><div class="logo">Streamlined Tech Systems</div><h1>Opportunity Summary Generator</h1></div>');
   parts.push('<div class="input-card" id="input-card">');
@@ -117,7 +117,7 @@ function getHTML() {
   parts.push('</div>');
   parts.push('<div class="report-footer">');
   parts.push('<div class="footer-contact"><strong>Streamlined Tech Systems</strong><br/>hello@streamlinedtechsys.com</div>');
-  parts.push('<button class="print-btn" onclick="window.print()">Save as PDF</button>');
+  parts.push('<button class="print-btn" onclick="window.print()">Save as PDF</button><div style="font-size:10px;color:#7a98ad;margin-top:6px;text-align:right;">In print dialog, uncheck "Headers and footers"</div>');
   parts.push('</div></div></div></div>');
   parts.push('<script>');
   parts.push('function getScore(grades,name){var g=(grades||[]).find(function(x){return x.name===name;});return g?g.value:null;}');
