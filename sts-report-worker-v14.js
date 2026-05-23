@@ -29,7 +29,7 @@ function getHTML() {
   parts.push('.report-sub{font-size:12px;color:#7a98ad;display:block;margin-bottom:8px}');
   parts.push('.prepared-by{font-size:11px;color:#c8dbe8;letter-spacing:0.05em;text-transform:uppercase;display:block}');
   parts.push('.report-body{padding:1.5rem}');
-  parts.push('.opp-block{margin-bottom:1.5rem}');
+  parts.push('.opp-block{margin-bottom:1.5rem;break-inside:avoid;page-break-inside:avoid}');
   parts.push('.opp-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}');
   parts.push('.opp-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}');
   parts.push('.opp-icon.rep{background:#d6e4ed;color:#1d3557}');
@@ -64,7 +64,7 @@ function getHTML() {
   parts.push('.print-btn:hover{background:#d6e4ed}');
   parts.push('.back-btn{font-size:13px;color:#457b9d;background:none;border:none;cursor:pointer;margin-bottom:1.25rem;display:flex;align-items:center;gap:6px;padding:0}');
   parts.push('.back-btn:hover{color:#1d3557}');
-  parts.push('@media print{@page{margin:0.5in}body{background:white;padding:0}.input-card,.back-btn,.print-btn,.tool-header{display:none !important}.report-card{display:block !important;border:none;border-radius:0}}');
+  parts.push('@media print{@page{margin:0.5in}body{background:white;padding:0}.input-card,.back-btn,.print-btn,.tool-header{display:none !important}.report-card{display:block !important;border:none;border-radius:0}.opp-block{page-break-inside:avoid}.sec-divider{page-break-after:avoid}.report-header{page-break-after:avoid}}');
   parts.push('</style></head><body><div class="container">');
   parts.push('<div class="tool-header"><div class="logo">Streamlined Tech Systems</div><h1>Opportunity Summary Generator</h1></div>');
   parts.push('<div class="input-card" id="input-card">');
