@@ -46,9 +46,9 @@ function getHTML() {
   parts.push('.opp-line{font-size:13px;color:#1d3557;background:#eef3f7;border-left:3px solid #457b9d;border-radius:0 8px 8px 0;padding:12px 14px;line-height:1.65}');
   parts.push('.gbp-checks{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}');
   parts.push('.check-item{display:flex;align-items:center;gap:8px;font-size:13px;color:#2b4a6b}');
-  parts.push('.check-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}');
-  parts.push('.check-dot.pass{background:#1D9E75}');
-  parts.push('.check-dot.fail{background:#f4a261}');
+  parts.push(".check-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;print-color-adjust:exact;-webkit-print-color-adjust:exact}");
+  parts.push(".check-dot.pass{background:#1D9E75;print-color-adjust:exact;-webkit-print-color-adjust:exact}");
+  parts.push(".check-dot.fail{background:#f4a261;print-color-adjust:exact;-webkit-print-color-adjust:exact}");
   parts.push('.comp-wrap{margin-top:14px}');
   parts.push('.sec-label{font-size:11px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:#457b9d;margin-bottom:6px}');
   parts.push('.comp-note{font-size:12px;color:#457b9d;margin-bottom:10px;line-height:1.6}');
@@ -64,6 +64,8 @@ function getHTML() {
   parts.push('.print-btn:hover{background:#d6e4ed}');
   parts.push('.back-btn{font-size:13px;color:#457b9d;background:none;border:none;cursor:pointer;margin-bottom:1.25rem;display:flex;align-items:center;gap:6px;padding:0}');
   parts.push('.back-btn:hover{color:#1d3557}');
+  parts.push('.screen-only{display:block}');
+  parts.push('@media print{.screen-only{display:none !important}}');
   parts.push('@media print{@page{margin:0.5in}body{background:white;padding:0}.input-card,.back-btn,.print-btn,.tool-header{display:none !important}.report-card{display:block !important;border:none;border-radius:0}.opp-block{page-break-inside:avoid}.sec-divider{page-break-after:avoid}.report-header{page-break-after:avoid}}');
   parts.push('</style></head><body><div class="container">');
   parts.push('<div class="tool-header"><div class="logo">Streamlined Tech Systems</div><h1>Opportunity Summary Generator</h1></div>');
