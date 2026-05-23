@@ -5,6 +5,7 @@ function getHTML() {
   parts.push('<meta name="viewport" content="width=device-width, initial-scale=1.0" />');
   parts.push('<title>STS Opportunity Summary</title>');
   parts.push('<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />');
+  parts.push('<style>');
   parts.push('*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}');
   parts.push('body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f4f7f9;min-height:100vh;padding:2rem 1rem;color:#222}');
   parts.push('.container{max-width:720px;margin:0 auto}');
