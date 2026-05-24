@@ -108,10 +108,10 @@ function getHTML() {
   parts.push('<div class="opp-block">');
   parts.push('<div class="opp-head"><div class="opp-icon rep">&#9432;</div><div class="opp-title">Why review follow-up matters</div></div>');
   parts.push('<div style="font-size:13px;color:#2b4a6b;line-height:1.9;">');
-  parts.push('<p style="margin-bottom:8px;"><strong style="color:#1d3557;">93%</strong> of consumers say online reviews influence their purchasing decisions.</p>');
-  parts.push('<p style="margin-bottom:8px;"><strong style="color:#1d3557;">89%</strong> of consumers read how a business responds to reviews before deciding whether to visit.</p>');
-  parts.push('<p style="margin-bottom:8px;">Businesses that respond to reviews are seen as <strong style="color:#1d3557;">1.7x more trustworthy</strong> than those that don\'t respond at all.</p>');
-  parts.push('<p><strong style="color:#1d3557;">53%</strong> of customers expect a response to a negative review within 7 days. Most local businesses never respond.</p>');
+  parts.push('<p style="margin-bottom:10px;">Customers often look at recent reviews before deciding whether to call, book, or visit.</p>');
+  parts.push('<p style="margin-bottom:10px;">When review requests are inconsistent, positive customer experiences may never show up online.</p>');
+  parts.push('<p style="margin-bottom:10px;">Responding to reviews helps potential customers see that the business pays attention and values feedback.</p>');
+  parts.push('<p>A simple review request and response process can make those steps easier to manage during a busy day.</p>');
   parts.push('</div>');
   parts.push('</div>');
   parts.push('<hr class="sec-divider" />');
