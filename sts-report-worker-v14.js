@@ -94,7 +94,7 @@ function getHTML() {
   parts.push('<div class="stat-chip"><div class="val" id="o-gmb-total"></div><div class="lbl">Google reviews</div></div>');
   parts.push('<div class="stat-chip"><div class="val" id="o-gmb-rating"></div><div class="lbl">Current Google rating</div></div>');
   parts.push('<div class="stat-chip alert"><div class="val" id="o-neg-reviews"></div><div class="lbl">Reviews without a response</div><div class="sublbl" id="o-neg-sublbl"></div></div>');
-  parts.push('<div class="stat-chip alert"><div class="val">Opportunity</div><div class="lbl">Consistent follow-up</div><div class="sublbl">Review requests + responses</div></div>');
+  parts.push('<div class="stat-chip alert"><div class="val">Opportunity</div><div class="lbl">More consistent review requests and responses</div></div>');
   parts.push('</div>');
   parts.push('<div class="opp-line" id="o-rep-opp"></div>');
   parts.push('</div>');
@@ -131,7 +131,7 @@ function getHTML() {
   parts.push('</div>');
   parts.push('<div class="report-footer">');
   parts.push('<div class="footer-contact"><strong>Streamlined Tech Systems</strong><br/>hello@streamlinedtechsys.com</div>');
-  parts.push('<div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;"><a href="https://api.leadconnectorhq.com/widget/bookings/rgs-strategy-call" style="display:inline-block;padding:8px 16px;background:#1d3557;color:#eef3f7;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;">Schedule a free strategy call &#8594;</a><button class="print-btn screen-only" onclick="window.print()">Save as PDF</button></div>');
+  parts.push('<div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right;"><p style="font-size:13px;color:#457b9d;margin-bottom:6px;font-style:italic;">We\'d love to talk about your reviews.</p><a href="https://api.leadconnectorhq.com/widget/bookings/rgs-strategy-call" style="display:inline-block;padding:8px 16px;background:#1d3557;color:#eef3f7;border-radius:8px;font-size:13px;font-weight:500;text-decoration:none;">Schedule a brief Zoom call &#8594;</a><button class="print-btn screen-only" onclick="window.print()">Save as PDF</button></div>');
   parts.push('</div></div></div></div>');
   parts.push('<script>');
   parts.push('function getScore(grades,name){var g=(grades||[]).find(function(x){return x.name===name;});return g?g.value:null;}');
@@ -163,7 +163,7 @@ function getHTML() {
   parts.push('document.getElementById("o-neg-reviews").textContent=negReviews||"--";');
   parts.push('if(negReviews>0){document.getElementById("o-neg-sublbl").textContent="Includes negative reviews";}');
   parts.push('var repOpp="";');
-  parts.push('if(negReviews>3){repOpp=biz+" already has review activity to build from. The main opportunity is more consistent follow-up and response tracking, especially on Google. Responding to reviews, including the critical ones, shows potential customers how the business handles feedback.";}');
+  parts.push('if(negReviews>3){repOpp=biz+" already has review activity to build from. The main opportunity is more consistent follow-up and response tracking, especially on Google. Responding to reviews, including critical feedback, helps potential customers see that the business pays attention and values customer input.";}');
   parts.push('else if(gmbTotal>0){repOpp="With "+Number(gmbTotal).toLocaleString()+" Google reviews and a "+Number(gmbRating).toFixed(1)+"-star rating, the review foundation is solid. The opportunity is in building volume consistently and making sure every review gets a timely, on-brand response.";}');
   parts.push('else{repOpp="Building a consistent review presence is one of the highest-impact steps a local business can take. A simple follow-up system makes it easier to gather reviews and respond to them without adding work to the day.";}');
   parts.push('document.getElementById("o-rep-opp").textContent=repOpp;');
